@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+         http://www.springframework.org/schema/security  
+          http://www.springframework.org/schema/security/spring-security-3.1.xsd ">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing 
+		infrastructure -->
+
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<annotation-driven />
+
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
+		up static resources in the ${webappRoot}/resources directory -->
+
+	<resources mapping="/resources/**" location="/resources/" />
+	<resources mapping="/**" location="/" />
+
+	<mvc:annotation-driven />
+
+
+
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources 
+		in the /WEB-INF/views directory -->
+
+	<!-- Providing the path of jsp(view) -->
+	<!-- <beans:bean class="org.springframework.web.servlet.view.ResourceBundleViewResolver"> 
+		<beans:property name="basename" value="spring-views" /> </beans:bean> -->
+
+	<beans:bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix">
+			<beans:value>/WEB-INF/view/</beans:value>
+		</beans:property>
+		<beans:property name="suffix">
+			<beans:value>.jsp</beans:value>
+		</beans:property>
+	</beans:bean>
+
+	<!-- Handle the messages -->
+	<beans:bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<beans:property name="basename" value="classpath:messages" />
+		<beans:property name="defaultEncoding" value="UTF-8" />
+	</beans:bean>
+
+	<!-- JDBC properties file path for DB connection -->
+	<beans:bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+		p:location="/WEB-INF/jdbc.properties" />
+
+
+	<mvc:default-servlet-handler />
+	<mvc:annotation-driven />
+
+	<!-- Creating bean for DB connection -->
+	<beans:bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" 
+		destroy-method="close" p:driverClassName="${jdbc.driverClassName}"
+		p:url="${jdbc.databaseurl}" p:username="${jdbc.username}" p:password="${jdbc.password}" />
+
+	<!-- Hibernate 4 SessionFactory Bean definition -->
+	<beans:bean id="hibernate4AnnotatedSessionFactory" 
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" autowire="byType">
+		
+		<beans:property name="packagesToScan">
+
+			<beans:list>
+				<beans:value>com.nic.upjn.spring.entity</beans:value>
+			</beans:list>
+		</beans:property>
+		<beans:property name="hibernateProperties">
+			<beans:props>
+				<beans:prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect
+				</beans:prop>
+				<beans:prop key="hibernate.show_sql">true</beans:prop>
+			</beans:props>
+		</beans:property>
+	</beans:bean>
+
+
+
+	<!-- Configuring interceptors based on URI -->
+	<!-- <interceptors>
+		<interceptor>
+			<mapping path="/Home" />
+			<beans:bean
+				class="com.nic.upjn.spring.controller.RequestProcessingTimeInterceptor"></beans:bean>
+		</interceptor>
+	</interceptors> -->
+ 
+
+	<context:component-scan base-package="com.nic.upjn.spring" />
+
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<beans:bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager" autowire="byType">
+		
+	</beans:bean>
+	
+	
+	<beans:bean id="comboService"
+		class="com.nic.upjn.miscellaneous.ComboService">
+		
+	</beans:bean>
+
+</beans:beans>

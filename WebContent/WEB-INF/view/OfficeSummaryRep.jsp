@@ -1,0 +1,162 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+<link href="resources/css/upjn.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet"
+	href="resources/css/dhtmlgoodies_calendar.css" media="screen"></link>
+<script src="resources/js/validation.js" type="text/javascript"></script>
+<script type="text/javascript" src="resources/js/popcalendar.js"></script>
+<script type="text/javascript"
+	src="resources/js/New_Appointment_validation.js"></script>
+<script type="text/javascript" src="resources/js/NEW_NEW.js"></script>
+<script type="text/javascript"
+	src="resources/js/dhtmlgoodies_calendar.js"></script>
+<link href="resources/css/upjn.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+			<form action="/UPJN/OfficeSummaryReport">
+
+				<table width="95%" border="0" align="center" cellpadding="0"
+					cellspacing="0">
+					<tr>
+						<td align="center" valign="top"><table width="100%"
+								border="0" cellspacing="1" cellpadding="1">
+								<tr>
+									<td valign="top"><table width="100%" border="0"
+											cellspacing="3" cellpadding="3">
+											<tr>
+												<td valign="top" class="table_bg">
+													<table border="0" width="100%">
+
+														<tr>
+
+															<td class="table_head" colspan="4">Summary Report
+																for Salary by Various Office Of</td>
+
+
+														</tr>
+
+														<tr>
+															<td colspan="2" valign="top" class="cell_bg">&nbsp;</td>
+															<td align="right" class="error_normal">* Fields are
+																required</td>
+														</tr>
+
+														<tr>
+															<td></td>
+														</tr>
+
+														<tr>
+														
+															<td width="43%" align="left" valign="top" class="cell_bg">Select
+																Month</td>
+
+															<td align="left" valign="top" class="cell_bg" colspan="3">
+
+																<select required id="month" name="month"
+																class="cmb_medium">
+																	<option value="-1">[Select Month]</option>
+																	<c:forEach var="a" items="${months}">
+																		<option value="${a.monthName}">${a.value}</option>
+																	</c:forEach>
+															</select>
+
+															</td>
+														</tr>
+														<tr>
+															<td></td>
+														</tr>
+
+														<tr>
+															
+															<td width="43%" align="left" valign="top" class="cell_bg">Select
+																Year</td>
+
+															<td align="left" valign="top" class="cell_bg" colspan="3">
+
+																<select required id="year" name="year"
+																class="cmb_medium">
+																	<option value="-1">[Select Year]</option>
+																	<c:forEach var="a" items="${years}">
+																		<option value="${a.value}">${a.yearName}</option>
+																	</c:forEach>
+															</select>
+
+															</td>
+														</tr>
+
+														<tr>
+															<td></td>
+														</tr>
+
+														<tr>
+															<td width="43%" align="left" valign="top" class="cell_bg">Unpaid/Partly
+																Paid</td>
+															<td><input type="checkbox" name="isArrear" value="1">
+															</td>
+														</tr>
+
+														<tr>
+															<td></td>
+														</tr>
+
+														<tr>	
+															<td valign="top" class="cell_bg" align="left">Pay Bill Status<span
+																class="star">*</span>
+															</td>
+															<td><input type="checkbox" name="isBoth" value="2">
+																Both <input type="checkbox" name="isLocked" value="1">
+																Locked <input type="checkbox" name="isUnlocked" value="0">
+																UnLocked</td>
+														</tr>
+
+														<tr>
+															<td></td>
+														</tr>
+														
+														<tr>
+														
+															<td colspan="5" align="center" valign="top"
+																class="cell_bg"><input type="submit" value="Submit"
+																class="btn_medium"> <input type="reset"
+																value="Reset" class="btn_medium"></td>
+														</tr>
+														<tr>
+															<td>
+														<input type="hidden" name="group" value="${group}">	
+														<input type="hidden" name="type" value="${type}">
+															</td>
+														</tr>
+
+
+
+														<tr>
+															<td></td>
+														</tr>
+
+													</table>
+
+
+												</td>
+											</tr>
+										</table></td>
+								</tr>
+							</table></td>
+					</tr>
+				</table>
+
+			</form>
+
+
+
+</body>
+
+</html>

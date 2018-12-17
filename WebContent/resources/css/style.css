@@ -1,0 +1,114 @@
+@import
+	url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f0f0f0;
+	font-family: 'Open Sans', sans-serif;
+	/* background: url("resources/images/water.jpg"); */
+	background-repeat: no-repeat;
+	/* background-size:100% 100%; */
+	background-position: top;
+}
+
+#image {
+	/* background-color:#f0f0f0; */
+	width: 100%;
+	margin-top: 5px;
+	margin-left: 20px;
+	/* border: 1px solid black; */
+	height: 100px;
+}
+
+#ft {
+	margin-top: 4%;
+	height: 110px;
+	width: 100%;
+	border: 0px solid black;
+	float: left;
+	text-align: center;
+	color: #3C3C3C;
+}
+
+.button {
+	width: 100px;
+	background: #3db2e1;
+	display: block;
+	margin: 0 auto;
+	margin-top: 1%;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	transition: background .3s;
+	-webkit-transition: background .3s;
+}
+
+.button:hover {
+	background: #2288bb;
+}
+
+#login {
+	width: 400px; margin : 0 auto;
+	margin-top: 3%;
+	margin-bottom: 2%;
+	transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	margin: 0 auto;
+}
+
+#login h1 {
+	background: #3db2e1;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+}
+
+.frontForm {
+	background: #567;
+	padding: 6% 4%;
+}
+
+.text {
+	width: 100%;
+	height: 25px;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	font-family: 'Open Sans', sans-serif;
+	color: #555;
+}
+
+input[type="text"], input[type="password"] {
+	width: 92%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 4%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 95%;
+	color: #555;
+}
+
+input[type="submit"] {
+	width: 100%;
+	background: #3db2e1;
+	border: 0;
+	padding: 4%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+	color: #fff;
+	cursor: pointer;
+	transition: background .3s;
+	-webkit-transition: background .3s;
+}
+
+input[type="submit"]:hover {
+	background: #2288bb;
+}

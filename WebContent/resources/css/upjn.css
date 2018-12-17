@@ -1,0 +1,769 @@
+.fix_bg {
+	background-repeat: repeat-x;
+}
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.bold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #003366;
+	text-decoration: none;
+}
+/*.td_wth {
+	text-decoration: none;
+	border: 1px solid #4390E2;
+	padding: 5px;
+}*/
+.table_bg {
+	text-decoration: none;
+	border: 1px solid #4390E2;
+	padding: 0px;
+}
+.table_head {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #003366;
+	background-color: #F0F0F0;
+	text-decoration: none;
+	line-height: 20px;
+	padding-left: 5px;
+}
+.btn_go{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #4390E0;
+	border: 1px solid;
+	border-color: #F0F0F0 #666666 #666666 #F0F0F0;
+	width: 30px;
+}
+.btn_small {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #4390E0;
+	border: 1px solid;
+	border-color: #F0F0F0 #666666 #666666 #F0F0F0;
+	width: 75px;
+}
+.btn_medium {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #4390E0;
+	border: 1px solid;
+	border-color: #F0F0F0 #666666 #666666 #F0F0F0;
+	width: 100px;
+}
+.btn_large {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #4390E0;
+	border: 1px solid;
+	border-color: #F0F0F0 #666666 #666666 #F0F0F0;
+	width: 150px;
+}
+.btn_extralarge {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #4390E0;
+	border: 1px solid;
+	border-color: #F0F0F0 #666666 #666666 #F0F0F0;
+	width: 175px;
+}
+.btn_extralarge_New {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #4390E0;
+	border: 1px solid;
+	border-color: #F0F0F0 #666666 #666666 #F0F0F0;
+	width: 195px;
+}
+.cell_bg {
+
+	text-decoration: none;
+	background-color: #FFFFFF;
+}
+.txt_small {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 100px;
+}
+.txt_bitSmall{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 50px;
+}
+.txt_msgBitSmall{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: red; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 50px;
+	text-align:right; 
+}
+.txt_msgBitSmallBlue{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: blue; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 50px;
+	text-align:right; 
+}
+.txt_msgBitSmallBlack{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: black; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 50px;
+	text-align:right; 
+}
+.txt_medium {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 150px;
+}
+.txt_large {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 200px;
+}
+.txt_date {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 75px;
+}
+.txt_no {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 50px;
+}
+.txtarea_verysmall {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 150px;
+	height: 40px;
+}
+.txtarea_small {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 200px;
+	height: 40px;
+}
+.txtarea_large {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 300px;
+	height: 100px;
+}
+.txt_noborder {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 0px;
+}
+.txt_noborder_bold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 0px;
+}
+.cmb_small {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 110px;
+}
+.cmb_verySmall {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 55px;
+}
+.cmb_medium {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 150px;
+}
+.cmb_large {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 200px;
+}
+.cmb_extraLarge {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000; 
+	text-decoration: none;
+	background-color: #F0F0F0;
+	border: 1px #4390E2 solid;
+	width: 280px;
+}
+.tabdefault {
+	font-family:Verdana, Arial, Helvetica, sans-serif;		
+	font-weight:bold;
+	color: #0080C0;
+	border: 1px solid #5482C7;
+	text-decoration: none;
+	text-align: center;
+	padding: 0px 5px;
+	height: 25px;
+}
+.aHighlight {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+.msg {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #336633;
+	text-decoration: none;
+	text-align: center;
+	line-height: 22px;
+}
+.error_normal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FF0000;
+	text-decoration: none;
+	line-height: 22px;
+}
+.error {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+	text-align: center;
+	line-height: 22px;
+}
+.headRow {
+	background-color: #EAF2FE;
+	color: #000000;
+	font-weight: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	text-align: left;
+}
+.linkBtn{
+	background-color:#FFFFFF;
+	color: #003366;
+	font-weight: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: underline;
+	text-align: center;
+	border: 1px solid;
+	border-color: #FFFFFF #FFFFFF #FFFFFF #FFFFFF;
+	cursor: pointer;
+}
+.optional {
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+}
+.star {
+	color: #FF0000;	
+	font-size: 11px;
+	text-decoration: none;
+	text-align: right;	
+	vertical-align:top;	
+	
+}
+
+/*	************************************************************* */
+
+/*/------------------------------------------------------------------\*/
+/*|           A P P L I C A T I O N - S E R V E R S . C O M          |*/
+/*|                      ( I M P R O V E . F R )                     |*/
+/*|                                                                  |*/
+/*| Skin          : d\u00e9faut (AppServersDefaultSkin.css)               |*/
+/*| Compatibilit\u00e9 : 1.5.4.PPR                                        |*/ 
+/*| Derni\u00e8re maj  : 20000629                                         |*/
+/*|                                                                  |*/
+/*\------------------------------------------------------------------/*/
+
+
+/***********************************************
+ * color of the thin line surrounding the form *
+ **********************************************/
+TABLE.FORM {		
+		background-color : #FFFFFF;
+		border: 0px;
+		width:100%;
+}
+/**************************************
+ * background color of the form title *
+ *************************************/
+TH.FORM {
+		color      : #003366;
+		background-color : #EAF2FE;
+		font-weight: bold;
+		font-family : verdana;
+		border: 0px;
+		text-align:center;		
+		vertical-align:middle;
+		padding:'1''1''1''1';
+		table-layout:auto;
+}
+#t
+{
+	color      : #003366;
+		background-color : #EAF2FE;
+		font-weight: bold;
+		font-family : verdana;
+		border: 0px;
+		text-align:center;		
+		vertical-align:middle;
+		padding:'1''1''1''1';
+		table-layout:auto;
+}
+/********************************
+ * background color of the form *
+ *******************************/
+TD.FORM {
+		background-color : #FFFFFF;	
+		border: 0px;
+		text-align:left;
+		padding:'1''1''1''1';
+		height:20px;
+}
+
+
+/*******************************
+ *  background color to use to *
+ *  display the errors         *
+ ******************************/
+TD.ERROR {
+		background-color : #FF0000;
+}
+
+/**
+ * Le style FORM servant aussi pour les listes, il faut rajouter ceci pour les listes triables.
+ */
+TH.FORM TR TD {	
+		background-color: #EAF2FE;
+		color: #003366;
+		font-weight: bold;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		text-decoration: none;
+		text-align: left;
+		border: 0px;
+		padding:'1''1''1''1';
+}
+TH.FORM_SMALL TR TD {	
+		background-color: #EAF2FE;
+		color: #003366;
+		font-weight: bold;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 8px;
+		text-decoration: none;
+		text-align: left;
+		border: 0px;
+		padding:'1''1''1''1';
+}
+
+/******************************
+ *    class used to display   *
+ *    the input field labels  *
+ *****************************/
+
+.LABEL {
+	font-family : verdana;
+	font-size : 12;
+ 	color : #336699;
+
+}
+
+SPAN.LABEL {
+}
+TH.LABEL {
+		background-color: #EAF2FE;
+		color: #000000;
+		font-weight: bold;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		text-decoration: none;
+		text-align: left;
+}
+
+
+.LABELLEFT {
+	font-family : verdana;
+	font-size : 12;
+ 	color : #336699;	
+}
+
+SPAN.LABELLEFT {
+}
+TH.LABELLEFT {
+		text-align:left;
+}
+
+.COMMENT {
+	color      : #336699; 
+	font-style : bold; 
+	font-family: verdana;
+	text-align : center;
+}
+
+.TOPLINK {
+	font-style : verdana;
+	text-align : left;
+
+}
+
+
+/*******************************************
+ * class for the title of the subscription *
+ ******************************************/
+P.SUBSCRIPTION {
+		  color : #336699;
+		  font-family: arial;
+		  font-weight : bold;
+		  text-align : center;
+		  font-size : 16px;
+}
+/********************************************************
+ * color of the thin line surrounding the subscriptions *
+ *******************************************************/
+TABLE.SUBSCRIPTION {
+		background-color : #336600;
+}
+/*************************
+ * class for the headers *
+ ************************/
+TH.SUBSCRIPTION {
+		color      : #FFFFFF;
+		background-color : #336699;
+		font-weight: bold;			
+}
+/*******************************
+ * class for the subscriptions *
+ ******************************/
+TD.SUBSCRIPTION {
+
+		color      : #336699;
+		background-color : #FFFFFF;
+}
+
+.ongletMain {
+	BORDER-RIGHT: #336699 1px solid; 
+	BORDER-TOP: medium none; 
+	BORDER-LEFT: #336699 1px solid; 
+	BORDER-BOTTOM: #336699 1px solid; 
+	BACKGROUND-COLOR: #FFFFFF;/*dce8f4*/
+}
+
+.clsAction {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 10px; 
+	COLOR: #053c6d; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+.ongletTextEna {
+	BORDER-RIGHT: #336699 1px solid; 
+	BORDER-TOP: #336699 1px solid; 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 10px; 
+	BORDER-LEFT: #336699 1px solid; 
+	COLOR: #FFFFFF; /*#005386; */
+	BORDER-BOTTOM: medium none; 
+	FONT-FAMILY: verdana; 
+	BACKGROUND-COLOR: #336699; 
+	TEXT-ALIGN: center;
+}
+
+.ongletTextDis {
+	BORDER-RIGHT: #336699 1px solid; 
+	BORDER-TOP: #336699 1px solid; 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 10px; 
+	BORDER-LEFT: #336699 1px solid; 
+	COLOR: #336699; 
+	BORDER-BOTTOM: #336699 1px solid; 
+	FONT-FAMILY: verdana; 
+	BACKGROUND-COLOR: #FFFFFF; 
+	TEXT-ALIGN: center;
+}
+
+.ongletTextErr {
+	BORDER-RIGHT: #c5c5c5 1px solid; 
+	BORDER-TOP: #c5c5c5 1px solid; 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 10px; 
+	BORDER-LEFT: #c5c5c5 1px solid; 
+	COLOR: #FFFFFF; 
+	BORDER-BOTTOM: #80add6 2px solid; 
+	FONT-FAMILY: verdana; 
+	BACKGROUND-COLOR: #ED4F50;
+	TEXT-ALIGN: center;
+}
+
+.ongletMiddle {
+	BORDER-RIGHT: #336699 1px solid; 
+	BORDER-TOP: medium none; 
+	FONT-SIZE: 1px; 
+	BORDER-LEFT: #336699 1px solid; 
+	BORDER-BOTTOM: medium none; 
+	BACKGROUND-COLOR: #FFFFFF;
+}
+
+.ongletSpace {
+	BORDER-BOTTOM: #336699 1px solid;
+}
+
+/**
+ * Calendar classes
+ */
+
+TD.CALENDRIER {
+	color: #336699;
+	background-color: #C2C2C2; 
+	font-weight: bold; 
+	text-align: center; 
+	font-size: 10px;
+}
+
+A.CALENDRIER {
+	text-decoration: none; 
+	font-size: 10px;	
+	color: #336699; //#000000;
+}
+
+.CALENDARBORDER {
+	background-color: #336699; //#000000; 
+}
+
+.CALENDARTITLE {
+	background-color: #336699; //#C9252C;
+}
+
+.CALENDARWEEK {
+	background-color: #FFFFFF;
+}
+
+.CALENDARWEEKEND {
+	background-color: #FFF4E5;
+}
+
+.CALENDARSELECTED {
+	background-color: #FF8F01;
+}
+
+/************************************
+ *         Link Style          *
+ ************************************/
+
+A:link
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	COLOR: #003366; 
+	TEXT-DECORATION: none
+}
+A:visited 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	COLOR: #003366; 
+	TEXT-DECORATION: none
+}
+A:hover 
+{
+	COLOR: #0000A0; 
+	font-size: 12px;
+	color: brown;
+	TEXT-DECORATION: underline
+}
+
+/************************************
+ *         Datagrid styles          *
+ ************************************/
+
+TABLE.DATAGRID {
+	background-color : #336600;
+}
+
+TH.DATAGRID {	
+		color      : #FFFFFF;
+		background-color : #336699;
+		font-weight: bold;
+		font-family : verdana;
+}
+
+TABLE.DATAGRID TR TD {	
+	font-family : verdana;
+	padding: 2px;
+}
+
+TR.DATAGRID {		
+	background-color : #FFFFFF;	
+}
+
+TR.DATAGRID2 {		
+	background-color : #FFFFFF;	
+}
+
+.DATAGRID_SEL {
+	background-color : #336699;	
+}
+
+.DATAGRID_DEL {
+	text-decoration: line-through;
+}
+
+TR.DATAGRID_DEL TD INPUT {
+	text-decoration: line-through;
+}
+
+TABLE.DATAGRID TR TD INPUT {		
+	width: 100%;
+}
+
+
+/************************************
+ *         Suggest styles          *
+ ************************************/
+
+div.suggestionList {
+	z-index:500;
+	position:absolute;
+	width:150px; 
+	border:1px solid #333333; 
+	background-color:#ffffff; 
+	font-family:Verdana; 
+	font-size:12; 
+	cursor:default; 
+	visibility:hidden;
+}
+div.suggestionList_element_off {
+	width: 148px;
+	background: #ffffff;
+	color: #333333;
+	padding-left: 2px;
+}
+div.suggestionList_element_on {
+	width: 148px;
+	background: #6D99C6;
+	color: #ffffff;
+	padding-left: 2px;
+}
+.highlight {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+	line-height: 15px;
+}
